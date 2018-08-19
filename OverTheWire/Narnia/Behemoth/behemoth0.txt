@@ -1,0 +1,3 @@
+Run simple ltrace. strcmp is used with "eatmyshorts". Use that as key to get shell.
+
+Password for next level - aesebootiv
