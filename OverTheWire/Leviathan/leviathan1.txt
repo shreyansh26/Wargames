@@ -1,0 +1,3 @@
+RUn ./check using ltrace, i.e "ltrace ./check". Enter anything. You will find an strcmp with the string "sex". Enter this as the password to get shell.
+
+Password for next level - ougahZi8Ta

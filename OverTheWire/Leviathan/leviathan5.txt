@@ -1,0 +1,3 @@
+Craete symbolic link for password file with /tmp/file.log
+
+Password for next level - UgaoFee4li

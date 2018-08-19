@@ -1,0 +1,3 @@
+Great writeup here - https://github.com/adwait1-G/CTF-Writeups/blob/master/overthewire.org/Leviathan/leviathan2/leviathan2.md
+
+Password for next level - Ahdiemoo1j

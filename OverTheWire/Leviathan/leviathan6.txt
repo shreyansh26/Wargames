@@ -1,0 +1,3 @@
+Use radare2, find 0x1bd3 (7123) as argument.
+
+Password - ahy7MaeBo9
