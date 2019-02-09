@@ -1,0 +1,11 @@
+Upon Reverse Engineering, we find that the length of "name" and "password" should be same. And each character of "password" should be ahead of "name" by 5.
+
+For e.g. -
+
+Name - 2222
+Password - 7777
+
+or
+
+Name - aaaaa
+Password - fffff
