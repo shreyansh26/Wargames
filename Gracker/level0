@@ -1,0 +1,6 @@
+Ways to solve - 
+
+1. strings `elf_file`
+2. Use gdb, find address with which strcmp used. x/s `addr`
+
+Password for level1 - TVeB0MIlx0KB
