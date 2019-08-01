@@ -1,0 +1,6 @@
+Commands List
+-------------
+
+ls -al ch1cracked/.passwd
+sudo -l
+sudo -u app-script-ch1-cracked /bin/cat /challenge/app-script/ch1/ch1/../ch1cracked/.passwd
