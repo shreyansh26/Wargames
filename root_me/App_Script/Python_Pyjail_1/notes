@@ -1,0 +1,12 @@
+Walkthrough
+-----------
+
+Here we check in `func_code`
+
+Test for all types of characters
+' and " are denied
+
+Then do 
+print exit.func_code
+print exit.func_code.co_consts   # Tells all comparisons - gives fake flag
+exit(exit.func_code.co_consts[1])   # Actual flag
