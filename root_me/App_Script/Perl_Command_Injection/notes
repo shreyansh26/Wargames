@@ -1,0 +1,5 @@
+Commands List
+-------------
+
+./setuid-wrapper
+Input =>  | cat .passwd
