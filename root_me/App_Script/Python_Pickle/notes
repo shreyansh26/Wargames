@@ -1,0 +1,6 @@
+Commands List
+-------------
+
+python payload2.py
+ssh -p 2222 app-script-ch11@challenge02.root-me.org
+cat /tmp/ch5_passwd
