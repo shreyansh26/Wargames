@@ -1,0 +1,39 @@
+# pass = cant runm iiiiiiiiiii ps
+
+local_58 = 8
+while(local_58 < 17) {
+    if(pass[local_58] != 'i')
+}
+
+>>> password = ['']*0x13
+>>> password
+['', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '']
+>>> for i in range(8, 0x11):
+...     password[i] = 'i'
+... 
+>>> password
+['', '', '', '', '', '', '', '', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i', '', '']
+>>> 0x58 - 0x42
+22
+>>> 0x54 - 0x42
+18
+>>> password[18]
+''
+>>> len(password)
+19
+>>> password[0x54-0x42] = 's'
+>>> password
+['', '', '', '', '', '', '', '', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i', '', 's']
+>>> password[0x54-0x43] = 'p'
+>>> password[0x54-0x4d] = 'm'
+>>> password[2] = 'n'
+>>> password[0x54-0x4e] = 'n'
+>>> password[0] = 'c'
+>>> password[1] = 'a'
+>>> password[3] = 't'
+>>> password[0x54-0x50] = 'r'
+>>> password[0x54-0x4f] = 'u'
+>>> password
+['c', 'a', 'n', 't', 'r', 'u', 'n', 'm', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'i', 'p', 's']
+>>> ''.join(password)
+'cantrunmiiiiiiiiips'
