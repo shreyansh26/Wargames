@@ -1,0 +1,16 @@
+The required input is the sum of the return values of key1, key2 and key3. 
+In key1
+=======
+*In ARM, return value is typically stored in r0.
+
+We look at how pc keeps track. It points to two instructions ahead (i.e 8 bytes in normal mode and 4 bytes in Thumb mode). So here, return value is 0x00008ce4.
+
+In key2
+=======
+Here, transition to thumb mode takes place due to the instruction bx r6. r6 has pc + 1, i.e 0x00008d04 + 1. Now after that, r6 takes a jump of 4 because pc is moved in it and then 4 is added. So final address is 0x00008d0c.
+
+In key3
+=======
+The value of lr is the retuen value. And that is the next instruction to execute when key3 returns, i.e 0x00008d80.
+
+Answer is sum of all the return values, i.e 108400.
