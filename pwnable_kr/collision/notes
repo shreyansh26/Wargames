@@ -1,0 +1,3 @@
+When converting char array to int array, sets of 4 chars are taken and converted into hex (or int). So here we take the hash value, divide into 5 pieces, and add those pieces as a string in little endian order.
+
+./col `python -c 'print("\xc8\xce\xc5\x06"*4 + "\xcc\xce\xc5\x06")'`
