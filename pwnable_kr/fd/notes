@@ -1,0 +1,2 @@
+The (input - 0x1234) gives the file descriptor to be used with read. So, we want it to be stdin so as to pass "LETMEWIN\n" later. SInce fd for stdin is zero, our (input 0 0x1234) should be zero. Hence input = 0x1234 or 4660.
+
