@@ -1,0 +1,1 @@
+Distance between "key" and "overflowme" is 0x34. So, payload is crafets as in solution.hex (converted to solution using xxd -r solution.hex > solution). Now simply, (cat solution; cat) | nc pwnable.kr 9000
