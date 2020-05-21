@@ -1,0 +1,1 @@
+./cmd2 '"$(printf \\\057usr\\\057bin\\\057python)"'
